@@ -15,7 +15,7 @@
   a { color: inherit; text-decoration: none; }
 
   .page {
-    display: none;
+    display: flex;
     min-height: 100vh;
     background: var(--figma-bg-main);
   }
@@ -2159,6 +2159,12 @@
   .bv-output-body::-webkit-scrollbar, .tv-chat-list::-webkit-scrollbar,
   .tv-term-body::-webkit-scrollbar, .tv-app-scroll::-webkit-scrollbar,
   .tv-prompt-text::-webkit-scrollbar { width: 0; height: 0; display: none; }
+
+  /* The three workspace stages toggle via the [hidden] attribute. Each sets
+     display:flex below, which would otherwise beat the browser's default
+     [hidden] rule and leave every stage on screen at once, so force the
+     hidden ones off explicitly (same pattern as the modals above). */
+  .build-view[hidden], .test-view[hidden], .launch-view[hidden] { display: none !important; }
 
   /* =========================================================
      Build view (workspace content — Build stage)

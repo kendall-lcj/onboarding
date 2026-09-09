@@ -1,0 +1,1481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Create New AI Project</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/tokens.css" />
+<link rel="stylesheet" href="css/app.css" />
+<script defer src="js/app.js"></script>
+</head>
+<body>
+<div class="page">
+    <aside class="rail">
+      <img class="rail-bg" alt="" aria-hidden="true"
+           src="assets/inline-01.png" />
+      <div class="rail-top">
+        <button class="back-btn" type="button">
+          <svg class="chev" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M10 3 5 8l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Back
+        </button>
+
+        <h1 class="rail-title">Create New AI Project</h1>
+
+        <ol class="stepper" role="list">
+          <li class="step is-active" data-step="1">
+            <span class="step-node"><span class="step-dot"></span></span>
+            <div class="step-text">
+              <span class="step-label">Step 1</span>
+              <span class="step-desc">Key in project information</span>
+            </div>
+          </li>
+          <li class="step is-pending" data-step="2">
+            <span class="step-node"></span>
+            <div class="step-text">
+              <span class="step-label">Step 2</span>
+              <span class="step-desc">Key in prompt</span>
+            </div>
+          </li>
+          <li class="step is-pending" data-step="3">
+            <span class="step-node"></span>
+            <div class="step-text">
+              <span class="step-label">Step 3</span>
+              <span class="step-desc">Choose AI Engine</span>
+            </div>
+          </li>
+          <li class="step is-pending" data-step="4">
+            <span class="step-node"></span>
+            <div class="step-text">
+              <span class="step-label">Step 4</span>
+              <span class="step-desc">Advanced settings</span>
+            </div>
+          </li>
+          <li class="step is-pending" data-step="5">
+            <span class="step-node"></span>
+            <div class="step-text">
+              <span class="step-label">Step 5</span>
+              <span class="step-desc">Set project budget</span>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <div class="rail-help">
+        <div>
+          <p class="rail-help-title">Having trouble?</p>
+          <p class="rail-help-desc">Feel free to contact us and we will always help you through the process</p>
+        </div>
+        <button class="contact-btn" type="button">Contact Us</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <img class="wave-bg" alt="" aria-hidden="true"
+           src="assets/inline-02.png"
+           data-figma-node="8488:14240"
+           data-figma-src="https://www.figma.com/api/mcp/asset/9e2c3ec0-0d81-4ac7-9c4d-7d693b7c51f4.png" />
+      <div class="main-inner">
+        <div class="content-shell">
+          <div class="ghost-heading" aria-hidden="true">CREATE NEW AI PROJECT</div>
+
+          <div class="content-col">
+            <div class="step-title-block">
+              <span class="step-eyebrow" id="step-eyebrow">Step 1</span>
+              <h2 class="step-heading" id="step-heading">Enter project basic information</h2>
+            </div>
+
+            <!-- ========== Step 1 Panel ========== -->
+            <div class="step-panel is-active" data-panel="1">
+              <div class="fields">
+                <div class="field">
+                  <label class="field-label">Choose your app icon</label>
+                  <div class="icon-card">
+                    <div class="picker-preview">
+                      <div class="picker-preview-avatar" role="img" aria-label="Selected app icon: trophy">🏆</div>
+                      <input id="icon-upload" type="file" accept="image/png,image/jpeg,image/webp,image/gif,image/svg+xml" hidden />
+                      <button class="upload-btn" type="button">
+                        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                          <rect x="1.5" y="4" width="13" height="9.5" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
+                          <path d="M5.5 4 6.5 2.5h3L10.5 4" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+                          <circle cx="8" cy="9" r="2.4" stroke="currentColor" stroke-width="1.3"/>
+                        </svg>
+                        Upload
+                      </button>
+                    </div>
+                    <div class="icon-grid" role="listbox" aria-label="Preset app icons">
+                      <button class="icon-chip" title="Piggy">🐷</button>
+                      <button class="icon-chip" title="Castle">🏰</button>
+                      <button class="icon-chip" title="Diamond">💎</button>
+                      <button class="icon-chip" title="Crown">👑</button>
+                      <button class="icon-chip" title="Lion">🦁</button>
+                      <button class="icon-chip" title="Deer">🦌</button>
+                      <button class="icon-chip" title="Bear">🐻</button>
+                      <button class="icon-chip" title="Ninja">🥷</button>
+                      <button class="icon-chip" title="Panda">🐼</button>
+                      <button class="icon-chip" title="Baby">👶</button>
+                      <button class="icon-chip is-selected" title="Trophy" aria-selected="true">🏆</button>
+                      <button class="icon-chip" title="Car">🚗</button>
+                      <button class="icon-chip" title="Pill">💊</button>
+                      <button class="icon-chip" title="Avocado">🥑</button>
+                      <button class="icon-chip" title="Phone">📱</button>
+                      <button class="icon-chip" title="Gift">🎁</button>
+                      <button class="icon-chip" title="Cupcake">🧁</button>
+                      <button class="icon-chip" title="Popcorn">🍿</button>
+                      <button class="icon-chip" title="Cake">🎂</button>
+                      <button class="icon-chip" title="Hot dog">🌭</button>
+                      <button class="icon-chip" title="Earth">🌍</button>
+                      <button class="icon-chip" title="Wine">🍷</button>
+                      <button class="icon-chip" title="Sunset">🌅</button>
+                      <button class="icon-chip" title="Bacon">🥓</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="field-label" for="app-name">App Name</label>
+                  <input id="app-name" class="input" type="text" placeholder="Enter app name" />
+                </div>
+              </div>
+            </div>
+
+            <!-- ========== Step 2 Panel ========== -->
+            <div class="step-panel" data-panel="2">
+              <div class="fields">
+                <div class="field">
+                  <label class="field-label" for="app-prompt">What app are you trying to build?</label>
+                  <textarea id="app-prompt" class="prompt-input" rows="6"
+                    placeholder="E.g.: I want to build an eCommerce app with 20 pages, including product listings, checkout, and a user dashboard. The design should be modern and user-friendly, using a blue and white color combination with a clean layout, intuitive navigation, and a responsive design for all devices."></textarea>
+                </div>
+                <div class="feat-row" role="list">
+                  <button class="feat-card feat-card-brand" type="button" role="listitem">
+                    <span class="feat-icon" aria-hidden="true">
+                      <img src="assets/inline-03.png" alt="" width="60" height="60" style="object-fit:contain;" />
+                    </span>
+                    <span class="feat-text">
+                      <span class="feat-title">Advanced Ideation</span>
+                      <span class="feat-desc">Can't quite write? Try our Advanced Ideation to create a more accurate app that matches your vision</span>
+                    </span>
+                  </button>
+                  <button class="feat-card feat-card-blue" type="button" role="listitem">
+                    <span class="feat-icon" aria-hidden="true">
+                      <img src="assets/inline-04.png" alt="" width="60" height="60" style="object-fit:contain;" />
+                    </span>
+                    <span class="feat-text">
+                      <span class="feat-title">Instant Ideas</span>
+                      <span class="feat-desc">Can't quite write? Try our Advanced Ideation to create a more accurate app that matches your vision</span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- ========== Step 3 Panel ========== -->
+            <div class="step-panel" data-panel="3">
+              <div class="engine-grid" role="radiogroup" aria-label="Choose AI Engine">
+                <button class="engine-card is-selected" type="button" role="radio" aria-checked="true" data-engine="balanced">
+                  <span class="engine-icon" aria-hidden="true"><img src="assets/inline-05.png" alt="" /></span>
+                  <span class="engine-info">
+                    <span class="engine-name-row">
+                      <span class="engine-name">Balanced</span>
+                      <span class="engine-badge">DEFAULT</span>
+                    </span>
+                    <span class="engine-desc">Strikes a middle ground between speed and accuracy, delivering well-rounded outputs</span>
+                  </span>
+                  <span class="engine-check" aria-hidden="true">
+                    <svg viewBox="0 0 20 20" width="14" height="14" fill="none"><path d="M5 10.5 8.5 14 15 7" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                </button>
+                <button class="engine-card" type="button" role="radio" aria-checked="false" data-engine="swiftly">
+                  <span class="engine-icon" aria-hidden="true"><img src="assets/inline-06.png" alt="" /></span>
+                  <span class="engine-info">
+                    <span class="engine-name-row">
+                      <span class="engine-name">Swiftly</span>
+                    </span>
+                    <span class="engine-desc">Faster app generation, saving time and budget for rapid prototyping with essential details</span>
+                  </span>
+                  <span class="engine-check" aria-hidden="true">
+                    <svg viewBox="0 0 20 20" width="14" height="14" fill="none"><path d="M5 10.5 8.5 14 15 7" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                </button>
+                <button class="engine-card" type="button" role="radio" aria-checked="false" data-engine="quality">
+                  <span class="engine-icon" aria-hidden="true"><img src="assets/inline-07.png" alt="" /></span>
+                  <span class="engine-info">
+                    <span class="engine-name-row">
+                      <span class="engine-name">Quality</span>
+                    </span>
+                    <span class="engine-desc">Highly accurate &amp; detailed results but takes longer time &amp; more budget</span>
+                  </span>
+                  <span class="engine-check" aria-hidden="true">
+                    <svg viewBox="0 0 20 20" width="14" height="14" fill="none"><path d="M5 10.5 8.5 14 15 7" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                </button>
+                <button class="engine-card" type="button" role="radio" aria-checked="false" data-engine="custom">
+                  <span class="engine-icon" aria-hidden="true"><img src="assets/inline-08.png" alt="" /></span>
+                  <span class="engine-info">
+                    <span class="engine-name-row">
+                      <span class="engine-name">Custom</span>
+                    </span>
+                    <span class="engine-desc">Adjust the amount of AI revisions based on user's preference. Affects speed and accuracy of the result</span>
+                  </span>
+                  <span class="engine-check" aria-hidden="true">
+                    <svg viewBox="0 0 20 20" width="14" height="14" fill="none"><path d="M5 10.5 8.5 14 15 7" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </span>
+                </button>
+              </div>
+
+              <!-- Custom AI revisions (visible only when Custom engine is selected) -->
+              <div class="custom-revisions" id="custom-revisions" hidden>
+                <div class="custom-revisions-header">
+                  <h3 class="custom-revisions-heading">Custom AI revisions</h3>
+                  <p class="custom-revisions-desc">AI can perform up to 10x internal revisions, with each revision using more budget</p>
+                </div>
+                <div class="custom-revisions-fields">
+                  <div class="custom-rev-field">
+                    <label class="custom-rev-label" for="rev-tech-lead">Tech Lead</label>
+                    <div class="custom-rev-input-wrap">
+                      <input class="custom-rev-input" id="rev-tech-lead" type="text" inputmode="numeric" pattern="[0-9]*" value="3" />
+                      <span class="custom-rev-suffix">times</span>
+                    </div>
+                    <p class="custom-rev-error" id="rev-tech-lead-error">Maximum revision is 10 times</p>
+                  </div>
+                  <div class="custom-rev-field">
+                    <label class="custom-rev-label" for="rev-sw-engineer">Software Engineer</label>
+                    <div class="custom-rev-input-wrap">
+                      <input class="custom-rev-input" id="rev-sw-engineer" type="text" inputmode="numeric" pattern="[0-9]*" value="3" />
+                      <span class="custom-rev-suffix">times</span>
+                    </div>
+                    <p class="custom-rev-error" id="rev-sw-engineer-error">Maximum revision is 10 times</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-panel" data-panel="4">
+              <div class="adv-section">
+
+                <!-- ── Grouped card: Autopilot + Manual Review ── -->
+                <div class="adv-group-card">
+
+                  <!-- Autopilot row -->
+                  <div class="adv-row">
+                    <div class="adv-row-main">
+                      <div class="adv-icon-circle"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><g clip-path="url(#cp-ap)"><path d="M21.04 11.75H9.82c-2.07 0-3.74 1.65-3.74 3.68v1.84c0 2.04 1.67 3.69 3.74 3.69h11.22c2.07 0 3.74-1.65 3.74-3.69v-1.84c0-2.03-1.67-3.68-3.74-3.68Z" stroke="#FF5F24" stroke-width="1.5" stroke-miterlimit="10"/><path d="M11.69 23.73h7.48M15.43 3.46c-2.69 0-5.19.8-7.27 2.17.52 1.6 2.03 2.76 3.83 2.76h6.87c1.8 0 3.3-1.16 3.84-2.76C20.62 4.26 18.12 3.46 15.43 3.46Z" stroke="#FF5F24" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/><path d="M2.34 16.36c0-1.61.31-3.14.86-4.57a2.34 2.34 0 0 0-.39-.04c-1.29 0-2.34 1.03-2.34 2.3v4.61c0 1.27 1.05 2.3 2.34 2.3.13 0 .26-.02.39-.04a12.7 12.7 0 0 1-.86-4.56ZM28.05 11.75c-.13 0-.26.02-.39.04.55 1.42.86 2.96.86 4.57 0 1.61-.31 3.13-.86 4.56.13.02.26.04.39.04 1.29 0 2.34-1.03 2.34-2.3v-4.61c0-1.27-1.05-2.3-2.34-2.3Z" stroke="#FF5F24" stroke-width="1.5" stroke-miterlimit="10"/><path d="M15.43 29.25c7.23 0 13.09-5.78 13.09-12.9S22.66 3.46 15.43 3.46 2.34 9.23 2.34 16.35s5.86 12.9 13.09 12.9ZM1.83 11.75V2.75M29.02 11.75V2.75" stroke="#FF5F24" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/></g><defs><clipPath id="cp-ap"><rect width="32" height="32" fill="white"/></clipPath></defs></svg></div>
+                      <div class="adv-text">
+                        <span class="adv-title">Enable Autopilot</span>
+                        <span class="adv-desc">Autonomous Artificial Intelligence is a powerful tool designed to save time and automate tasks, disabling all manual review settings</span>
+                      </div>
+                    </div>
+                    <button class="adv-radio" type="button" data-radio="autopilot" aria-pressed="true"><svg class="chk-off" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#575659" stroke-width="1.5"/></svg><svg class="chk-on"  width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#4DD4AC"/><path d="M5.5 10.5 8.5 13.5 14.5 7" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                  </div>
+
+                  <div class="adv-divider"></div>
+
+                  <!-- Manual Review row (body stacks text+checkbox and sub-toggles) -->
+                  <div class="adv-row" style="gap: 0; align-items: flex-start;">
+                    <div class="adv-row-body">
+                      <div style="display:flex; gap:var(--space-20); align-items:center;">
+                        <div class="adv-icon-circle"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M11.13 21.06c2.82 2.79 7.39 2.79 10.21 0" stroke="#FF5F24" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/><path d="M5.12 11.75c2.57-.61 3.96-1.07 6.08-2.98.24-.21.57-.29.87-.18 1.54.57 6.8 2.35 15.46 3.59-1.6-4.64-6.04-7.98-11.28-7.98s-9.39 3.14-11.13 7.55Z" stroke="#FF5F24" stroke-width="1.5" stroke-miterlimit="10"/><circle cx="11.12" cy="15.06" r="1.71" fill="#FF5F24"/><circle cx="21.35" cy="15.06" r="1.71" fill="#FF5F24"/><path d="M4.31 16c0-1 .14-1.97.38-2.91a2.37 2.37 0 0 0-.38-.03c-1.64 0-2.97 1.31-2.97 2.94 0 1.63 1.33 2.94 2.97 2.94.13 0 .26-.02.38-.03A10.71 10.71 0 0 1 4.31 16ZM28.17 13.06c-.13 0-.26.02-.38.03.24.94.38 1.91.38 2.91 0 1-.15 1.97-.38 2.91.13.02.25.03.38.03 1.64 0 2.97-1.31 2.97-2.94 0-1.63-1.33-2.94-2.97-2.94Z" stroke="#FF5F24" stroke-width="1.5" stroke-miterlimit="10"/><path d="M16.24 27.8c6.59 0 11.93-5.28 11.93-11.8S22.83 4.2 16.24 4.2 4.31 9.48 4.31 16s5.34 11.8 11.93 11.8Z" stroke="#FF5F24" stroke-width="1.5" stroke-miterlimit="10"/></svg></div>
+                        <div style="display:flex; flex:1; gap:60px; align-items:center; min-width:0;">
+                          <div class="adv-text">
+                            <span class="adv-title">Manual Review</span>
+                            <span class="adv-desc">Review and provide detailed feedback on designs generated by these AI agents for greater control over the process, available only with autopilot OFF</span>
+                          </div>
+                          <button class="adv-radio" type="button" data-radio="manual" aria-pressed="false"><svg class="chk-off" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="9" stroke="#575659" stroke-width="1.5"/></svg><svg class="chk-on"  width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#4DD4AC"/><path d="M5.5 10.5 8.5 13.5 14.5 7" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                        </div>
+                      </div>
+                      <div class="adv-subtoggle-row" style="opacity:0.35;pointer-events:none;">
+                        <span class="adv-subtoggle-item">Business Analyst <button class="adv-toggle-btn" type="button" aria-pressed="true"><svg class="tog-off" width="36" height="36" viewBox="0 0 28 28" fill="none"><rect x="2" y="8" width="24" height="12" rx="6" fill="#454547"/><circle cx="8"  cy="14" r="5" fill="white"/></svg><svg class="tog-on"  width="36" height="36" viewBox="0 0 28 28" fill="none"><rect x="2" y="8" width="24" height="12" rx="6" fill="#4DD4AC"/><circle cx="20" cy="14" r="5" fill="white"/></svg></button></span>
+                        <span class="adv-subtoggle-item">Tech Lead <button class="adv-toggle-btn" type="button" aria-pressed="true"><svg class="tog-off" width="36" height="36" viewBox="0 0 28 28" fill="none"><rect x="2" y="8" width="24" height="12" rx="6" fill="#454547"/><circle cx="8"  cy="14" r="5" fill="white"/></svg><svg class="tog-on"  width="36" height="36" viewBox="0 0 28 28" fill="none"><rect x="2" y="8" width="24" height="12" rx="6" fill="#4DD4AC"/><circle cx="20" cy="14" r="5" fill="white"/></svg></button></span>
+                        <span class="adv-subtoggle-item">UI Designer <button class="adv-toggle-btn" type="button" aria-pressed="false"><svg class="tog-off" width="36" height="36" viewBox="0 0 28 28" fill="none"><rect x="2" y="8" width="24" height="12" rx="6" fill="#454547"/><circle cx="8"  cy="14" r="5" fill="white"/></svg><svg class="tog-on"  width="36" height="36" viewBox="0 0 28 28" fill="none"><rect x="2" y="8" width="24" height="12" rx="6" fill="#4DD4AC"/><circle cx="20" cy="14" r="5" fill="white"/></svg></button></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ── Docs & UI only (standalone row) ── -->
+                <div class="adv-row" style="padding:var(--space-16) var(--space-24);">
+                  <div class="adv-row-main">
+                    <div class="adv-icon-circle" style="background:var(--figma-icon-bg);"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><g clip-path="url(#cp-sc)"><path d="M3.11.75h21.78C26.19.75 27.25 1.81 27.25 3.11v21.78c0 1.3-1.06 2.36-2.36 2.36H3.11A2.36 2.36 0 0 1 .75 24.89V3.11C.75 1.81 1.81.75 3.11.75Z" stroke="#FF5F24" stroke-width="1.5" stroke-miterlimit="10"/><path d="M4.82 15.41h18.36M4.82 18.94h18.36M4.82 22.47h18.36" stroke="#FF5F24" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/><circle cx="14" cy="15.41" r="1.41" fill="#FF5F24" stroke="#FF5F24" stroke-width="1.5" stroke-miterlimit="10"/><circle cx="8.35" cy="18.94" r="1.41" fill="#FF5F24" stroke="#FF5F24" stroke-width="1.5" stroke-miterlimit="10"/><circle cx="19.65" cy="22.47" r="1.41" fill="#FF5F24" stroke="#FF5F24" stroke-width="1.5" stroke-miterlimit="10"/><rect x="5.25" y="5.25" width="17.5" height="7" rx="1.4" stroke="#FF5F24" stroke-width="1.5" stroke-miterlimit="10"/></g><defs><clipPath id="cp-sc"><rect width="28" height="28" fill="white"/></clipPath></defs></svg></div>
+                    <div class="adv-text">
+                      <span class="adv-title">Docs &amp; UI only</span>
+                      <span class="adv-desc">Control app generation by stopping at the <strong>UI Designer</strong> stage to save time and cost. You can preview all documents, including text files, Markdown files and HTML files.</span>
+                    </div>
+                  </div>
+                  <button class="adv-toggle-btn" type="button" aria-pressed="false"><svg class="tog-off" width="36" height="36" viewBox="0 0 28 28" fill="none"><rect x="2" y="8" width="24" height="12" rx="6" fill="#454547"/><circle cx="8"  cy="14" r="5" fill="white"/></svg><svg class="tog-on"  width="36" height="36" viewBox="0 0 28 28" fill="none"><rect x="2" y="8" width="24" height="12" rx="6" fill="#4DD4AC"/><circle cx="20" cy="14" r="5" fill="white"/></svg></button>
+                </div>
+
+                <!-- ── Add-ons ── -->
+                <div style="display:flex; flex-direction:column; gap:var(--space-4);">
+                  <p class="addon-section-label">Add-ons for your backend (<em>optional</em>)</p>
+                  <div class="addon-grid" role="group" aria-label="Add-ons">
+
+                    <!-- APIs (pre-selected) -->
+                    <button class="addon-card" type="button" aria-pressed="false" data-addon="apis">
+                      <div class="addon-row">
+                        <div class="addon-icon"><img src="assets/inline-09.png" alt="APIs" width="32" height="32"></div>
+                        <span class="addon-name">APIs</span>
+                        <div class="addon-check"><svg viewBox="0 0 12 12" width="12" height="12" fill="none"><path d="M2 6 5 9 10 3" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                      </div>
+                      <p class="addon-desc">A standard protocol that allows your app to communicate with external services or platforms.</p>
+                    </button>
+
+                    <!-- Supabase -->
+                    <button class="addon-card" type="button" aria-pressed="false" data-addon="supabase">
+                      <div class="addon-row">
+                        <div class="addon-icon"><img src="assets/inline-10.png" alt="Supabase" width="24" height="24"></div>
+                        <span class="addon-name">Supabase</span>
+                        <div class="addon-check"><svg viewBox="0 0 12 12" width="12" height="12" fill="none"><path d="M2 6 5 9 10 3" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                      </div>
+                      <p class="addon-desc">An extremely popular open-source Postgres database for trusted performance, alongside file storage.</p>
+                    </button>
+
+                    <!-- Plugins -->
+                    <button class="addon-card" type="button" aria-pressed="false" data-addon="plugins">
+                      <div class="addon-row">
+                        <div class="addon-icon"><img src="assets/inline-11.png" alt="Plugins" width="32" height="32"></div>
+                        <span class="addon-name">Plugins</span>
+                        <div class="addon-check"><svg viewBox="0 0 12 12" width="12" height="12" fill="none"><path d="M2 6 5 9 10 3" stroke="#141414" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                      </div>
+                      <p class="addon-desc">A small extension that adds specific features or functions to your app, like an enhancement.</p>
+                    </button>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Step 5: Budget -->
+            <div class="step-panel" data-panel="5">
+              <div class="budget-section">
+                <div class="budget-left">
+                  <div class="budget-heading-block">
+                    <h2 class="budget-heading">Finally set your desired budget</h2>
+                    <p class="budget-desc">Your budget is an allocated amount from your main wallet for this AI project. Once used up, you&rsquo;ll need to reload credits from your main wallet to continue. Budget usage highly depends on the <strong style="color:var(--text-primary);font-weight:600">Application Size</strong> (determines number of pages) and the <strong style="color:var(--text-primary);font-weight:600">AI engine</strong> you choose (impacts number of revisions).</p>
+                  </div>
+                  <div class="budget-input-group">
+                    <div class="budget-input-wrap">
+                      <span class="budget-prefix">$</span>
+                      <input class="budget-input" type="text" inputmode="decimal" placeholder="100 is a good starting point" aria-label="Project budget in USD">
+                    </div>
+                    <a class="credit-link" href="#" role="button">
+                      <svg class="credit-coin-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><circle cx="10.0002" cy="10" r="8.38889" stroke="#FF5F24"/><circle cx="10.0002" cy="10" r="6.16667" stroke="#FF5F24"/><path d="M10.4465 13.3333C9.96159 13.3333 9.51346 13.2535 9.10216 13.0939C8.69701 12.9282 8.34403 12.698 8.04323 12.4033C7.74243 12.1025 7.50916 11.7495 7.34341 11.3444C7.18381 10.9331 7.104 10.4819 7.104 9.99078C7.104 9.51196 7.18995 9.06997 7.36183 8.66482C7.53372 8.25966 7.77006 7.90975 8.07085 7.61509C8.37779 7.31429 8.73691 7.08102 9.1482 6.91528C9.56564 6.74953 10.0199 6.66666 10.511 6.66666C10.8179 6.66666 11.1187 6.70656 11.4134 6.78636C11.7081 6.86617 11.9812 6.98587 12.2329 7.14548C12.4907 7.29895 12.7117 7.48311 12.8959 7.69796L11.9383 8.79373C11.8093 8.65868 11.6712 8.54204 11.5239 8.44382C11.3827 8.33946 11.2262 8.25966 11.0543 8.20441C10.8824 8.14916 10.6982 8.12154 10.5018 8.12154C10.2562 8.12154 10.023 8.16758 9.80198 8.25966C9.58712 8.3456 9.39682 8.47144 9.23108 8.63719C9.07147 8.7968 8.94562 8.99324 8.85354 9.22651C8.76146 9.45978 8.71542 9.72068 8.71542 10.0092C8.71542 10.2916 8.76146 10.5494 8.85354 10.7827C8.94562 11.0098 9.07454 11.2063 9.24028 11.372C9.40603 11.5377 9.60554 11.6636 9.83881 11.7495C10.0782 11.8355 10.3422 11.8784 10.6307 11.8784C10.8271 11.8784 11.0144 11.8508 11.1924 11.7956C11.3704 11.7403 11.5331 11.6667 11.6804 11.5746C11.8339 11.4764 11.969 11.3659 12.0856 11.2431L12.8407 12.4401C12.6872 12.612 12.4815 12.7655 12.2237 12.9005C11.972 13.0356 11.6896 13.143 11.3766 13.2228C11.0696 13.2965 10.7596 13.3333 10.4465 13.3333Z" fill="#FF5F24"/></svg>
+                      See how pricing works
+                    </a>
+                  </div>
+                </div>
+                <div class="coin-illustration" aria-hidden="true">
+                  <img class="coin-img" src="assets/inline-12.png" alt="">
+                  <div class="coin-glow" aria-hidden="true"></div>
+                  <img class="sp sp-1" src="assets/inline-13.png" alt="">
+                  <img class="sp sp-2" src="assets/inline-14.png" alt="">
+                  <img class="sp sp-3" src="assets/inline-15.png" alt="">
+                  <img class="sp sp-4" src="assets/inline-16.png" alt="">
+                  <img class="sp sp-5" src="assets/inline-17.png" alt="">
+                  <img class="sp sp-6" src="assets/inline-18.png" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-bar">
+          <div class="footer-inner">
+            <button class="prev-btn" id="btn-prev" type="button" tabindex="-1" aria-hidden="true">
+              <span class="disk">
+                <svg viewBox="0 0 12 12" width="12" height="12" fill="none">
+                  <path d="M7.5 2.5 3.5 6l4 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              Prev
+            </button>
+            <button class="next-btn" id="btn-next" type="button" aria-label="Next step">
+              <span class="next-btn-label">Next</span><span class="next-btn-label-create">Create</span>
+              <span class="disk">
+                <svg viewBox="0 0 12 12" width="12" height="12" fill="none">
+                  <path d="M4.5 2.5 8.5 6l-4 3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ========== Advanced Ideation Modal ========== -->
+  <div class="ai-modal" id="ai-modal" role="dialog" aria-modal="true" aria-labelledby="ai-modal-title" hidden>
+    <div class="ai-modal-container">
+      <!-- X pinned to top-right corner of the full-screen surface -->
+      <button class="ai-modal-close" id="ai-modal-close" type="button" aria-label="Close Advanced Ideation">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M15 5 5 15M5 5l10 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <div class="ai-modal-header">
+        <div class="ai-modal-heading-block">
+          <span class="ai-modal-eyebrow">Advanced Ideation</span>
+          <h2 class="ai-modal-title" id="ai-modal-title">Tell us more about your vision</h2>
+          <p class="ai-modal-desc">Answer a few questions and we'll craft the perfect prompt for your app.</p>
+        </div>
+      </div>
+      <div class="ai-modal-body">
+        <div class="ai-modal-fields">
+          <div class="ai-field">
+            <label class="ai-label" for="ai-goal">What is the primary goal of your app?<span class="ai-required" aria-hidden="true">*</span></label>
+            <input id="ai-goal" class="ai-input" type="text" placeholder="e.g. Help users track daily habits and stay productive" />
+            <span class="ai-field-error" id="ai-goal-error" hidden></span>
+          </div>
+          <div class="ai-field">
+            <label class="ai-label" for="ai-audience">Who is your target audience?</label>
+            <input id="ai-audience" class="ai-input" type="text" placeholder="e.g. Young professionals aged 25–35" />
+          </div>
+          <div class="ai-field">
+            <label class="ai-label" for="ai-features">What key features must the app have?<span class="ai-required" aria-hidden="true">*</span></label>
+            <textarea id="ai-features" class="ai-textarea" rows="4" placeholder="e.g. User login, real-time notifications, a dashboard, social sharing, and offline mode"></textarea>
+            <span class="ai-field-error" id="ai-features-error" hidden></span>
+          </div>
+          <div class="ai-field">
+            <label class="ai-label" for="ai-style">Describe your preferred design style or brand feel</label>
+            <input id="ai-style" class="ai-input" type="text" placeholder="e.g. Minimalist, dark theme, modern and professional" />
+          </div>
+          <div class="ai-field">
+            <label class="ai-label" for="ai-platform">Which platforms should the app support?</label>
+            <input id="ai-platform" class="ai-input" type="text" placeholder="e.g. iOS, Android, Web" />
+          </div>
+          <div class="ai-field">
+            <label class="ai-label" for="ai-extra">Anything else you'd like us to know? <span class="ai-optional">(optional)</span></label>
+            <textarea id="ai-extra" class="ai-textarea" rows="3" placeholder="e.g. We'd love multi-language support and accessibility compliance"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="ai-modal-footer">
+        <button class="ai-cancel-btn" id="ai-modal-cancel" type="button">Cancel</button>
+        <button class="ai-confirm-btn" id="ai-modal-confirm" type="button">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Instant Ideas Modal ========== -->
+  <div class="ii-modal" id="ii-modal" role="dialog" aria-modal="true" aria-labelledby="ii-modal-title" hidden>
+    <!-- Hero (128px) -->
+    <div class="ii-hero">
+      <img class="ii-hero-bg" src="assets/plugin-listing-hero-bg.jpg" alt="" aria-hidden="true" />
+      <div class="ii-hero-content">
+        <div class="ii-hero-left">
+          <img class="ii-hero-icon" src="assets/template-icon.png" alt="" aria-hidden="true" />
+          <div class="ii-hero-text">
+            <p class="ii-hero-heading" id="ii-modal-title">Instant Ideas</p>
+            <p class="ii-hero-subhead">Pick from 900+ professionally designed website/app templates, free, fully customizable and tailored to any business type.</p>
+          </div>
+        </div>
+        <button class="ii-hero-close" id="ii-modal-close" type="button" aria-label="Close Instant Ideas">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Body: sidebar + right col -->
+    <div class="ii-body">
+      <!-- Left sidebar -->
+      <aside class="ii-sidebar">
+        <div class="ii-tab">BROWSE BY</div>
+        <div class="ii-sidebar-scroll">
+          <!-- Filter by Category -->
+          <div class="ii-filter-section">
+            <span class="ii-filter-label">Filter by Category</span>
+            <div class="ii-filter-group" role="radiogroup" aria-label="Category">
+              <label class="ii-radio-item is-active" data-filter="cat" data-value="All">
+                <input type="radio" name="ii-cat" value="All" checked />
+                <span class="ii-radio-dot"></span>All Categories
+              </label>
+              <label class="ii-radio-item" data-filter="cat" data-value="Website">
+                <input type="radio" name="ii-cat" value="Website" />
+                <span class="ii-radio-dot"></span>Website
+              </label>
+              <label class="ii-radio-item" data-filter="cat" data-value="Landing">
+                <input type="radio" name="ii-cat" value="Landing" />
+                <span class="ii-radio-dot"></span>Landing Page
+              </label>
+              <label class="ii-radio-item" data-filter="cat" data-value="Blog">
+                <input type="radio" name="ii-cat" value="Blog" />
+                <span class="ii-radio-dot"></span>Blog
+              </label>
+              <label class="ii-radio-item" data-filter="cat" data-value="Dashboard">
+                <input type="radio" name="ii-cat" value="Dashboard" />
+                <span class="ii-radio-dot"></span>Dashboard
+              </label>
+              <label class="ii-radio-item" data-filter="cat" data-value="eCommerce">
+                <input type="radio" name="ii-cat" value="eCommerce" />
+                <span class="ii-radio-dot"></span>eCommerce
+              </label>
+            </div>
+          </div>
+          <!-- Filter by Platform -->
+          <div class="ii-filter-section">
+            <span class="ii-filter-label">Filter by Platform</span>
+            <div class="ii-filter-group" role="radiogroup" aria-label="Platform">
+              <label class="ii-radio-item is-active" data-filter="plat" data-value="All">
+                <input type="radio" name="ii-plat" value="All" checked />
+                <span class="ii-radio-dot"></span>All Platforms
+              </label>
+              <label class="ii-radio-item" data-filter="plat" data-value="Healthcare">
+                <input type="radio" name="ii-plat" value="Healthcare" />
+                <span class="ii-radio-dot"></span>Healthcare
+              </label>
+              <label class="ii-radio-item" data-filter="plat" data-value="Financial">
+                <input type="radio" name="ii-plat" value="Financial" />
+                <span class="ii-radio-dot"></span>Financial
+              </label>
+              <label class="ii-radio-item" data-filter="plat" data-value="Retail">
+                <input type="radio" name="ii-plat" value="Retail" />
+                <span class="ii-radio-dot"></span>Retail
+              </label>
+              <label class="ii-radio-item" data-filter="plat" data-value="Automotive">
+                <input type="radio" name="ii-plat" value="Automotive" />
+                <span class="ii-radio-dot"></span>Automotive
+              </label>
+              <label class="ii-radio-item" data-filter="plat" data-value="Beauty &amp; Wellness">
+                <input type="radio" name="ii-plat" value="Beauty &amp; Wellness" />
+                <span class="ii-radio-dot"></span>Beauty &amp; Wellness
+              </label>
+            </div>
+          </div>
+          <!-- Filter by Vendor -->
+          <div class="ii-filter-section">
+            <span class="ii-filter-label">Filter by Vendor</span>
+            <div class="ii-filter-group" role="radiogroup" aria-label="Vendor">
+              <label class="ii-radio-item is-active" data-filter="vendor" data-value="All">
+                <input type="radio" name="ii-vendor" value="All" checked />
+                <span class="ii-radio-dot"></span>All
+              </label>
+              <label class="ii-radio-item" data-filter="vendor" data-value="Official eMOBIQ">
+                <input type="radio" name="ii-vendor" value="Official eMOBIQ" />
+                <span class="ii-radio-dot"></span>Official eMOBIQ
+              </label>
+              <label class="ii-radio-item" data-filter="vendor" data-value="Third party">
+                <input type="radio" name="ii-vendor" value="Third party" />
+                <span class="ii-radio-dot"></span>Third party
+              </label>
+            </div>
+          </div>
+          <!-- Filter by Keyword -->
+          <div class="ii-filter-section">
+            <span class="ii-filter-label">Filter by Keyword</span>
+            <div class="ii-side-search-wrap">
+              <img class="ii-side-search-icon" src="assets/search-icon.svg" alt="" aria-hidden="true" />
+              <input class="ii-side-search" id="ii-side-search" type="search" placeholder="Search keywords..." aria-label="Filter by keyword" />
+            </div>
+          </div>
+          <!-- Bookmarked -->
+          <label class="ii-checkbox-item" id="ii-bookmarked-label">
+            <input type="checkbox" id="ii-bookmarked-chk" />
+            <span class="ii-checkbox-box"></span>
+            Only bookmarked templates
+          </label>
+        </div>
+        <!-- Reset filter (pinned bottom) -->
+        <div class="ii-reset-wrap">
+          <button class="ii-reset-btn" id="ii-reset-btn" type="button">Reset filter</button>
+        </div>
+      </aside>
+      <!-- Right content -->
+      <div class="ii-content">
+        <div class="ii-content-scroll">
+          <!-- Top row (scrolls with content) -->
+          <div class="ii-top-row">
+            <div class="ii-top-left">
+              <h3 class="ii-top-heading">Instant idea templates</h3>
+              <span class="ii-top-count" id="ii-count">9 templates found.</span>
+            </div>
+            <div class="ii-top-tools">
+              <div class="ii-top-search-wrap">
+                <img class="ii-top-search-icon" src="assets/search-icon.svg" alt="" aria-hidden="true" />
+                <input class="ii-top-search" id="ii-search" type="search" placeholder="Search idea templates..." aria-label="Search idea templates" />
+              </div>
+              <div class="ii-sort-btns" role="group" aria-label="Sort direction">
+                <button class="ii-sort-btn is-active" id="ii-sort-asc" type="button" title="Sort ascending" aria-pressed="true">
+                  <img src="assets/sort-asc-icon.svg" alt="Ascending" />
+                </button>
+                <button class="ii-sort-btn" id="ii-sort-dsc" type="button" title="Sort descending" aria-pressed="false">
+                  <img src="assets/sort-dsc-icon.svg" alt="Descending" />
+                </button>
+              </div>
+              <div class="ii-menu" id="ii-sort-menu">
+                <button class="ii-menu-trigger" id="ii-sort-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+                  <span id="ii-sort-label">Alphabetical order</span>
+                  <svg class="ii-menu-chev" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="ii-menu-list" id="ii-sort-list" role="listbox" aria-label="Sort by" hidden>
+                  <button class="ii-menu-item is-selected" type="button" role="option" aria-selected="true" data-value="name">Alphabetical order
+                    <svg class="ii-menu-check" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.5 3.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                  <button class="ii-menu-item" type="button" role="option" aria-selected="false" data-value="price">Price
+                    <svg class="ii-menu-check" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.5 3.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                  <button class="ii-menu-item" type="button" role="option" aria-selected="false" data-value="category">Category
+                    <svg class="ii-menu-check" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.5 3.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card grid -->
+          <div class="ii-grid" id="ii-grid">
+            <!-- Cards injected by JS -->
+          </div>
+          <!-- Pagination (visual) -->
+          <div class="ii-pagination">
+            <div class="ii-page-nav">
+              <button class="ii-page-btn" type="button" aria-label="Previous page">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+              <span class="ii-page-label">Page 1/10</span>
+              <button class="ii-page-btn" type="button" aria-label="Next page">
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+            <div class="ii-page-jump">
+              <span class="ii-page-jump-label">Jump to page</span>
+              <input class="ii-page-jump-input" type="text" inputmode="numeric" aria-label="Jump to page" value="1" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════ Plugin Marketplace Modal ══════ -->
+  <div class="pm-modal" id="pm-modal" role="dialog" aria-modal="true" aria-labelledby="pm-modal-title" hidden>
+    <!-- Hero (128px) -->
+    <div class="pm-hero">
+      <img class="pm-hero-bg" src="assets/plugin-listing-hero-bg.png" alt="" aria-hidden="true" />
+      <div class="pm-hero-content">
+        <div class="pm-hero-left">
+          <img class="pm-hero-icon" src="assets/plugin-graphic.png" alt="" aria-hidden="true" />
+          <div class="pm-hero-text">
+            <p class="pm-hero-heading" id="pm-modal-title">Plugins</p>
+            <p class="pm-hero-subhead">Supercharge your app by adding plugins to extend its power with specific features and functions tailored to your needs.</p>
+          </div>
+        </div>
+        <button class="pm-hero-close" id="pm-modal-close" type="button" aria-label="Close Plugin Marketplace">
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M12 4 4 12M4 4l8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+    <!-- Body: sidebar + content -->
+    <div class="pm-body">
+      <!-- Sidebar -->
+      <aside class="pm-sidebar">
+        <div class="pm-tab-header">BROWSE BY</div>
+        <div class="pm-sidebar-scroll">
+          <!-- Category -->
+          <div class="pm-filter-section">
+            <span class="pm-filter-label">Filter by Category</span>
+            <div class="pm-filter-group" role="radiogroup" aria-label="Category">
+              <label class="pm-radio-item is-active" data-pm-filter="cat" data-value="All">
+                <input type="radio" name="pm-cat" value="All" checked />
+                <span class="pm-radio-dot"></span>All
+              </label>
+              <label class="pm-radio-item" data-pm-filter="cat" data-value="Productivity">
+                <input type="radio" name="pm-cat" value="Productivity" />
+                <span class="pm-radio-dot"></span>Productivity
+              </label>
+              <label class="pm-radio-item" data-pm-filter="cat" data-value="Image editing">
+                <input type="radio" name="pm-cat" value="Image editing" />
+                <span class="pm-radio-dot"></span>Image editing
+              </label>
+              <label class="pm-radio-item" data-pm-filter="cat" data-value="Communication">
+                <input type="radio" name="pm-cat" value="Communication" />
+                <span class="pm-radio-dot"></span>Communication
+              </label>
+              <label class="pm-radio-item" data-pm-filter="cat" data-value="Design & UI">
+                <input type="radio" name="pm-cat" value="Design & UI" />
+                <span class="pm-radio-dot"></span>Design &amp; UI
+              </label>
+              <label class="pm-radio-item" data-pm-filter="cat" data-value="Data & Analytics">
+                <input type="radio" name="pm-cat" value="Data & Analytics" />
+                <span class="pm-radio-dot"></span>Data &amp; Analytics
+              </label>
+              <label class="pm-radio-item" data-pm-filter="cat" data-value="eCommerce">
+                <input type="radio" name="pm-cat" value="eCommerce" />
+                <span class="pm-radio-dot"></span>eCommerce
+              </label>
+              <label class="pm-radio-item" data-pm-filter="cat" data-value="Marketing">
+                <input type="radio" name="pm-cat" value="Marketing" />
+                <span class="pm-radio-dot"></span>Marketing
+              </label>
+            </div>
+          </div>
+          <!-- Platform -->
+          <div class="pm-filter-section">
+            <span class="pm-filter-label">Filter by Platform</span>
+            <div class="pm-filter-group" role="radiogroup" aria-label="Platform">
+              <label class="pm-radio-item" data-pm-filter="plat" data-value="All">
+                <input type="radio" name="pm-plat" value="All" />
+                <span class="pm-radio-dot"></span>All
+              </label>
+              <label class="pm-radio-item is-active" data-pm-filter="plat" data-value="iOS">
+                <input type="radio" name="pm-plat" value="iOS" checked />
+                <span class="pm-radio-dot"></span>iOS
+              </label>
+              <label class="pm-radio-item" data-pm-filter="plat" data-value="Android">
+                <input type="radio" name="pm-plat" value="Android" />
+                <span class="pm-radio-dot"></span>Android
+              </label>
+              <label class="pm-radio-item" data-pm-filter="plat" data-value="Web">
+                <input type="radio" name="pm-plat" value="Web" />
+                <span class="pm-radio-dot"></span>Web
+              </label>
+            </div>
+          </div>
+          <!-- Vendor -->
+          <div class="pm-filter-section">
+            <span class="pm-filter-label">Filter by Vendor</span>
+            <div class="pm-filter-group" role="radiogroup" aria-label="Vendor">
+              <label class="pm-radio-item is-active" data-pm-filter="vendor" data-value="All">
+                <input type="radio" name="pm-vendor" value="All" checked />
+                <span class="pm-radio-dot"></span>All
+              </label>
+              <label class="pm-radio-item" data-pm-filter="vendor" data-value="Official eMOBIQ">
+                <input type="radio" name="pm-vendor" value="Official eMOBIQ" />
+                <span class="pm-radio-dot"></span>Official eMOBIQ
+              </label>
+              <label class="pm-radio-item" data-pm-filter="vendor" data-value="Third party">
+                <input type="radio" name="pm-vendor" value="Third party" />
+                <span class="pm-radio-dot"></span>Third party
+              </label>
+            </div>
+          </div>
+          <!-- Keyword -->
+          <div class="pm-filter-section">
+            <span class="pm-filter-label">Filter by Keyword</span>
+            <div class="pm-side-search-wrap">
+              <img class="pm-side-search-icon" src="assets/search-icon.svg" alt="" aria-hidden="true" />
+              <input class="pm-side-search" id="pm-side-search" type="search" placeholder="Search keywords..." aria-label="Filter by keyword" />
+            </div>
+          </div>
+          <!-- Bookmarked -->
+          <label class="pm-checkbox-item" id="pm-bookmarked-label">
+            <input type="checkbox" id="pm-bookmarked-chk" />
+            <span class="pm-checkbox-box"></span>
+            Only bookmarked plugins
+          </label>
+        </div>
+        <!-- Reset filter -->
+        <div class="pm-reset-wrap">
+          <button class="pm-reset-btn" id="pm-reset-btn" type="button">Reset filter</button>
+        </div>
+      </aside>
+      <!-- Right content -->
+      <div class="pm-content">
+        <div class="pm-tabs">
+          <button class="pm-tab" data-pm-panel="added" type="button">
+            <img src="assets/plugin-added-icon.svg" alt="" aria-hidden="true" />
+            Added Plugins
+          </button>
+          <button class="pm-tab is-active" data-pm-panel="marketplace" type="button">
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M1 3.5v-2a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v2a2.5 2.5 0 0 1-1.5 2.29V14.5a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5V5.79A2.5 2.5 0 0 1 1 3.5ZM3.5 6v8h9V6a2.5 2.5 0 0 1-1.77-.74A2.49 2.49 0 0 1 8 6.5a2.49 2.49 0 0 1-2.73-1.24A2.5 2.5 0 0 1 3.5 6ZM2 2v1.5a1.5 1.5 0 1 0 3 0V2H2Zm4 0v1.5a1.5 1.5 0 1 0 3 0V2H6Zm4 0v1.5a1.5 1.5 0 1 0 3 0V2h-3Z" fill="#FF5F24"/></svg>
+            Plugin Marketplace
+          </button>
+        </div>
+        <div class="pm-content-scroll">
+          <!-- Top row -->
+          <div class="pm-top-row">
+            <div class="pm-top-left">
+              <h3 class="pm-top-heading">Plugin Marketplace</h3>
+              <span class="pm-top-count" id="pm-count">9 plugins found.</span>
+            </div>
+            <div class="pm-top-tools">
+              <div class="pm-top-search-wrap">
+                <img class="pm-top-search-icon" src="assets/search-icon.svg" alt="" aria-hidden="true" />
+                <input class="pm-top-search" id="pm-search" type="search" placeholder="Search plugins..." aria-label="Search plugins" />
+              </div>
+              <div class="pm-sort-btns" role="group" aria-label="Sort direction">
+                <button class="pm-sort-btn is-active" id="pm-sort-asc" type="button" title="Sort ascending" aria-pressed="true">
+                  <img src="assets/sort-asc-icon.svg" alt="Ascending" />
+                </button>
+                <button class="pm-sort-btn" id="pm-sort-dsc" type="button" title="Sort descending" aria-pressed="false">
+                  <img src="assets/sort-dsc-icon.svg" alt="Descending" />
+                </button>
+              </div>
+              <div class="pm-menu" id="pm-sort-menu">
+                <button class="pm-menu-trigger" id="pm-sort-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+                  <span id="pm-sort-label">Alphabetical order</span>
+                  <svg class="pm-menu-chev" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </button>
+                <div class="pm-menu-list" id="pm-sort-list" role="listbox" aria-label="Sort by" hidden>
+                  <button class="pm-menu-item is-selected" type="button" role="option" aria-selected="true" data-value="name">Alphabetical order
+                    <svg class="pm-menu-check" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.5 3.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                  <button class="pm-menu-item" type="button" role="option" aria-selected="false" data-value="vendor">Vendor
+                    <svg class="pm-menu-check" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.5 3.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                  <button class="pm-menu-item" type="button" role="option" aria-selected="false" data-value="category">Category
+                    <svg class="pm-menu-check" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8.5l3.5 3.5L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Plugin card grid -->
+          <div class="pm-grid" id="pm-grid">
+            <!-- Cards injected by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- ══════ Workspace View (shown after Create) ══════ -->
+  <div class="ws-view is-visible" id="ws-view">
+    <header class="ws-header">
+      <div class="ws-header-content">
+        <div class="ws-header-left">
+          <div class="ws-back-wrap">
+            <button class="ws-back-btn" type="button" aria-label="Back to projects">
+              <img class="ws-back-chevron" src="assets/chevron-left.svg" alt="" />
+              <img class="ws-logo" src="assets/emobiq-logomark.svg" alt="eMOBIQ" />
+            </button>
+          </div>
+        </div>
+        <div class="ws-header-center">
+          <nav class="ws-nav-group" aria-label="Workspace stages">
+            <button class="ws-nav-item is-active" type="button" data-stage="build">
+              <img class="ws-nav-icon" src="assets/build-icon.svg" alt="" />
+              Build
+            </button>
+            <button class="ws-nav-item" type="button" data-stage="test">
+              <img class="ws-nav-icon" src="assets/test-icon.svg" alt="" />
+              Test
+            </button>
+            <button class="ws-nav-item is-muted" type="button" data-stage="launch">
+              <img class="ws-nav-icon" src="assets/launch-icon.svg" alt="" />
+              Launch
+            </button>
+          </nav>
+        </div>
+        <div class="ws-header-right">
+          <div class="ws-icon-btns">
+            <button class="ws-icon-btn" type="button" aria-label="Apps">
+              <img src="assets/menu-icon.svg" alt="" />
+            </button>
+            <button class="ws-icon-btn" type="button" aria-label="Notifications">
+              <img src="assets/notif-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="ws-credits">
+            <div class="ws-credits-amount">
+              <img class="ws-credits-icon" src="assets/reload-credit-icon.svg" alt="" />
+              <span class="ws-credits-value">200.00</span>
+            </div>
+            <div class="ws-credits-divider"></div>
+            <div class="ws-credits-avatar">K</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="ws-content">
+      <div class="build-view">
+        <!-- Left: Project Overview -->
+        <aside class="bv-sidebar">
+          <div class="bv-side-header">
+            <div class="bv-side-header-row">
+              <div class="bv-side-project">
+                <div class="bv-avatar">K</div>
+                <span class="bv-project-name">My eCommerce app</span>
+              </div>
+              <button class="bv-icon-btn" type="button" aria-label="Project options">
+                <img class="bv-icon-16" src="assets/vert-dots-menu-icon.svg" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <div class="bv-side-scroll">
+            <p class="bv-side-title">Project Overview</p>
+
+            <div class="bv-section">
+              <div class="bv-section-head">
+                <img class="bv-icon-16" src="assets/lightbulb-icon.svg" alt="" />
+                <span class="bv-section-label">App ideation</span>
+                <img class="bv-icon-16 bv-chevron-right" src="assets/chevron-left.svg" alt="" />
+              </div>
+              <p class="bv-ideation">Embark on a fitness journey catered specifically to your needs at our exclusive studio. Experience top-quality training in a private and serene environment.</p>
+            </div>
+
+            <div class="bv-rows">
+              <div class="bv-row">
+                <span class="bv-row-label">
+                  <img class="bv-icon-16" src="assets/status-icon.svg" alt="" />
+                  <span>Builder Status</span>
+                </span>
+                <span class="bv-row-value"><i class="bv-dot"></i>Running</span>
+                <img class="bv-icon-16 bv-chevron-right" src="assets/chevron-left.svg" alt="" />
+              </div>
+              <div class="bv-row">
+                <span class="bv-row-label">
+                  <img class="bv-icon-16" src="assets/cost-icon.svg" alt="" />
+                  <span>Cost (credits)</span>
+                </span>
+                <span class="bv-row-value">200/500</span>
+                <img class="bv-icon-16 bv-chevron-right" src="assets/chevron-left.svg" alt="" />
+              </div>
+              <div class="bv-row">
+                <span class="bv-row-label">
+                  <img class="bv-icon-16" src="assets/ai-engine-icon.svg" alt="" />
+                  <span>AI engine</span>
+                </span>
+                <span class="bv-row-value">Balanced</span>
+                <img class="bv-icon-16 bv-chevron-right" src="assets/chevron-left.svg" alt="" />
+              </div>
+              <div class="bv-row">
+                <span class="bv-row-label">
+                  <img class="bv-icon-16" src="assets/doc-mode-icon.svg" alt="" />
+                  <span>Doc-mode</span>
+                </span>
+                <span class="bv-row-value">Yes</span>
+                <img class="bv-icon-16 bv-chevron-right" src="assets/chevron-left.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="bv-section">
+              <div class="bv-section-head">
+                <img class="bv-icon-16 bv-icon-white" src="assets/manual-review-icon.svg" alt="" />
+                <span class="bv-section-label">Manual review</span>
+                <img class="bv-icon-16 bv-chevron-right" src="assets/chevron-left.svg" alt="" />
+              </div>
+              <div class="bv-review-rows">
+                <div class="bv-review-row"><span>Business Analyst</span><span>Yes</span></div>
+                <div class="bv-review-row"><span>UI Designer</span><span>Yes</span></div>
+                <div class="bv-review-row"><span>Software Engineer</span><span>Yes</span></div>
+              </div>
+            </div>
+          </div>
+
+          <button class="bv-side-footer" type="button">
+            <span class="bv-footer-text">
+              <span class="bv-footer-title">
+                <img class="bv-icon-16" src="assets/ai-refine-icon.svg" alt="" />
+                Enhance idea
+              </span>
+              <span class="bv-footer-desc">Generate a new version by re-configuring autopilot settings.</span>
+            </span>
+            <img class="bv-icon-16 bv-chevron-right" src="assets/chevron-left.svg" alt="" />
+          </button>
+        </aside>
+
+        <!-- Middle: canvas + output -->
+        <section class="bv-main">
+          <div class="bv-canvas">
+            <div class="bv-canvas-center">
+            <p class="bv-progress-title">Progress</p>
+
+            <div class="bv-stepper-wrap">
+              <div class="bv-stepper">
+                <div class="bv-stepper-track"><div class="bv-stepper-fill"></div></div>
+                <button class="bv-step is-active" type="button" data-agent="ba">
+                  <span class="bv-step-circle">1</span>
+                  <span class="bv-step-name"><b>Business Analyst</b><span class="bv-step-cta">Click to review</span></span>
+                </button>
+                <button class="bv-step is-running" type="button" data-agent="tl">
+                  <span class="bv-step-circle"><span class="bv-step-dots"><i></i><i></i><i></i></span></span>
+                  <span class="bv-step-name"><b>Tech Lead</b></span>
+                </button>
+                <button class="bv-step is-pending" type="button" data-agent="pm">
+                  <span class="bv-step-circle">3</span>
+                  <span class="bv-step-name"><b>Project Manager</b></span>
+                </button>
+                <button class="bv-step is-pending" type="button" data-agent="ui">
+                  <span class="bv-step-circle">4</span>
+                  <span class="bv-step-name"><b>UI Designer</b></span>
+                </button>
+                <button class="bv-step is-pending" type="button" data-agent="se">
+                  <span class="bv-step-circle">5</span>
+                  <span class="bv-step-name"><b>Software Engineer</b></span>
+                </button>
+                <button class="bv-step is-pending" type="button" data-agent="qa">
+                  <span class="bv-step-circle">6</span>
+                  <span class="bv-step-name"><b>QA Specialist</b></span>
+                </button>
+              </div>
+
+              <div class="bv-agent">
+                <div class="bv-agent-body">
+                  <div class="bv-agent-rail"><span>AI AGENT</span></div>
+                  <div class="bv-agent-text">
+                    <p class="bv-agent-name" id="bv-agent-name">Business Analyst</p>
+                    <p class="bv-agent-desc" id="bv-agent-desc">The Business Analyst AI agent acts as the strategic planner while your app is built. It takes your input from natural language prompts or structured forms and turns it into clear, actionable requirements. Like a real business analyst, it identifies the app's main goals, outlines the key features, and keeps everything aligned with your intended purpose. This gives the other AI agents a strong foundation to build on.</p>
+                  </div>
+                </div>
+                <img class="bv-agent-icon" id="bv-agent-icon" src="assets/ba-icon.svg" alt="Business Analyst" />
+              </div>
+            </div>
+            </div>
+
+            <div class="bv-checkpoint" id="bv-checkpoint">
+              <img class="bv-checkpoint-bg" src="assets/checkpoint-banner-bg.png" alt="" />
+              <div class="bv-checkpoint-main">
+                <img class="bv-checkpoint-icon" src="assets/checkpoint-icon.svg" alt="" />
+                <div class="bv-checkpoint-text">
+                  <b>Business Analyst task completed!</b>
+                  <span>The Business Analyst agent has finished his task. Take a moment to review the details?</span>
+                </div>
+              </div>
+              <button class="bv-review-btn" type="button">
+                Review
+                <img src="assets/arrow-right-short.svg" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <div class="bv-output">
+            <div class="bv-output-head">
+              <div class="bv-output-pill">
+                <img src="assets/output-icon.svg" alt="" />
+                Output
+              </div>
+              <button class="bv-output-collapse" type="button" aria-label="Collapse output" aria-expanded="true">
+                <img src="assets/chevron-bottom-icon.svg" alt="" />
+              </button>
+            </div>
+            <div class="bv-output-body">
+              <div class="bv-output-line is-done">
+                <img src="assets/check-circle-icon.svg" alt="" />
+                <span>Implementation Approach</span>
+              </div>
+              <div class="bv-output-line is-progress">
+                <span class="bv-output-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span>Use case</span>
+              </div>
+              <div class="bv-output-line">
+                <span class="bv-output-dots is-static" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span>Robustness diagram</span>
+              </div>
+              <div class="bv-output-line">
+                <span class="bv-output-dots is-static" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span>Program call flow</span>
+              </div>
+              <div class="bv-output-line">
+                <span class="bv-output-dots is-static" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span>Data structures and interfaces</span>
+              </div>
+              <div class="bv-output-line">
+                <span class="bv-output-dots is-static" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span>Design</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="launch-view" hidden>
+        <!-- Main: left nav + center -->
+        <div class="lv-main">
+          <nav class="lv-nav" aria-label="Launch sections">
+            <button class="lv-nav-item is-active" type="button">
+              <img src="assets/launch-package-icon.svg" alt="" />
+              <span>Package</span>
+            </button>
+            <button class="lv-nav-item" type="button">
+              <img src="assets/launch-publish-icon.svg" alt="" />
+              <span>Publish</span>
+            </button>
+            <button class="lv-nav-item" type="button">
+              <img src="assets/launch-settings-icon.svg" alt="" />
+              <span>Settings</span>
+            </button>
+          </nav>
+
+          <section class="lv-center">
+            <div class="lv-content">
+              <div class="lv-head">
+                <p class="lv-title">Package</p>
+                <button class="lv-newbuild" type="button">
+                  New Build
+                  <img src="assets/chevron-bottom-icon.svg" alt="" />
+                </button>
+              </div>
+
+              <div class="lv-tabs">
+                <button class="lv-tab is-active" type="button">
+                  <img src="assets/all-packages-icon.svg" alt="" />
+                  All packages
+                </button>
+                <button class="lv-tab" type="button">
+                  <img src="assets/playstore-icon.svg" alt="" />
+                  Android
+                </button>
+                <button class="lv-tab" type="button">
+                  <img src="assets/appstore-icon.svg" alt="" />
+                  iOS
+                </button>
+                <button class="lv-tab" type="button">
+                  <img src="assets/web-icon.svg" alt="" />
+                  Web
+                </button>
+              </div>
+
+              <div class="lv-section">
+                <p class="lv-section-title">Latest Builds</p>
+                <div class="lv-builds">
+                  <div class="lv-build-card">
+                    <span class="lv-build-plat">
+                      <img src="assets/playstore-icon.svg" alt="" />
+                    </span>
+                    <div class="lv-build-info">
+                      <div class="lv-build-name"><b>Android</b><span>version 1.2</span></div>
+                      <div class="lv-build-meta">
+                        <span>Release</span>
+                        <i class="lv-dot"></i>
+                        <span>21 Mar 2025, 6:00pm</span>
+                        <i class="lv-dot"></i>
+                        <span class="lv-badge">Success</span>
+                      </div>
+                    </div>
+                    <div class="lv-build-actions">
+                      <button class="lv-build-act" type="button">
+                        <img src="assets/launch-log-icon.svg" alt="" />
+                        <span>Logs</span>
+                      </button>
+                      <button class="lv-build-act" type="button">
+                        <img src="assets/launch-download-icon.svg" alt="" />
+                        <span>Download</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Right ad column (per Figma) -->
+        <aside class="lv-ad">
+          <div class="lv-ad-top">
+            <div class="lv-ad-hero">
+              <img class="lv-ad-graphic" src="assets/publish-ad-pic-1.png" alt="" />
+              <div class="lv-ad-text">
+                <b>Build app professionally with eMOBIQ®</b>
+                <p>Discover eMOBIQ®, our sister product proudly developed by OrangeKloud, designed to help developers and non-developers alike build mobile apps effortlessly - without writing a single line of code.</p>
+              </div>
+            </div>
+            <button class="lv-ad-btn" type="button">
+              Go to eMOBIQ®
+              <img src="assets/ext-window-icon.svg" alt="" />
+            </button>
+          </div>
+          <img class="lv-ad-shot" src="assets/publish-ad-pic-2.png" alt="" />
+        </aside>
+      </div>
+
+      <div class="test-view" hidden>
+        <!-- Middle: preview + terminal -->
+        <section class="tv-main">
+          <div class="tv-tabbar">
+            <div class="tv-seg-group">
+              <button class="tv-seg is-active" type="button">Preview</button>
+              <button class="tv-seg" type="button">Code</button>
+            </div>
+          </div>
+
+          <div class="tv-viewport">
+            <div class="tv-breadcrumb">
+              <button class="tv-iconbtn tip-below tip-start" type="button" data-tip="Refresh" aria-label="Refresh">
+                <img src="assets/arrow-counterclockwise-icon.svg" alt="" />
+              </button>
+              <div class="tv-url">
+                <span class="tv-url-chip">
+                  <img src="assets/port-icon.svg" alt="" />
+                  <span>5173</span>
+                </span>
+                <span class="tv-url-sep">/</span>
+                <span class="tv-url-path">https://dev-ai-debugger.emobiq.com/preview/a35eb6b8-9dcb-52e8-bb83-86c4c6dbac8b/undefine</span>
+              </div>
+              <div class="tv-bc-actions">
+                <button class="tv-iconbtn tip-below tip-end" type="button" data-tip="Desktop - Mobile view" aria-label="Desktop - Mobile view">
+                  <img src="assets/responsive-icon.svg" alt="" />
+                </button>
+                <button class="tv-iconbtn tip-below tip-end" type="button" data-tip="Enlarge view" aria-label="Enlarge view">
+                  <img src="assets/enlarge-icon.svg" alt="" />
+                </button>
+                <button class="tv-iconbtn tip-below tip-end" type="button" data-tip="Open in external window" aria-label="Open in external window">
+                  <img src="assets/ext-window-icon.svg" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="tv-preview">
+              <div class="tv-phone">
+                <div class="tv-app" id="tv-app">
+                  <div class="tv-app-status">
+                    <b>9:41</b>
+                    <div class="tv-app-sysicons"><i></i><i></i><i></i><span class="tv-app-bar"></span></div>
+                  </div>
+
+                  <div class="tv-app-screens">
+                    <!-- Home (the real screen) -->
+                    <div class="tv-app-screen is-active" data-screen="home">
+                      <div class="tv-app-header">
+                        <h1>Discover</h1>
+                        <div class="tv-app-avatar"></div>
+                      </div>
+                      <div class="tv-app-search">
+                        <span class="tv-app-mag"></span>
+                        <input type="text" id="tv-app-q" placeholder="Search products" aria-label="Search products" />
+                      </div>
+                      <div class="tv-app-scroll">
+                        <div class="tv-app-hero">
+                          <small>Limited time</small>
+                          <b>Summer Sale</b>
+                          <span>Up to 50% off selected items</span>
+                        </div>
+                        <div class="tv-app-sec"><b>Popular</b><span>See all</span></div>
+                        <div class="tv-app-grid" id="tv-app-grid">
+                          <button class="tv-app-card" type="button" data-name="Aero Runner">
+                            <div class="tv-app-thumb" style="background:linear-gradient(135deg,#a5b4fc,#6366f1)"></div>
+                            <div class="tv-app-meta"><b>Aero Runner</b><span class="tv-app-price">$89</span></div>
+                          </button>
+                          <button class="tv-app-card" type="button" data-name="Studio Lamp">
+                            <div class="tv-app-thumb" style="background:linear-gradient(135deg,#fca5a5,#ef4444)"></div>
+                            <div class="tv-app-meta"><b>Studio Lamp</b><span class="tv-app-price">$42</span></div>
+                          </button>
+                          <button class="tv-app-card" type="button" data-name="Trail Bottle">
+                            <div class="tv-app-thumb" style="background:linear-gradient(135deg,#6ee7b7,#10b981)"></div>
+                            <div class="tv-app-meta"><b>Trail Bottle</b><span class="tv-app-price">$18</span></div>
+                          </button>
+                          <button class="tv-app-card" type="button" data-name="Sun Shades">
+                            <div class="tv-app-thumb" style="background:linear-gradient(135deg,#fde68a,#f59e0b)"></div>
+                            <div class="tv-app-meta"><b>Sun Shades</b><span class="tv-app-price">$25</span></div>
+                          </button>
+                          <button class="tv-app-card" type="button" data-name="Desk Mat">
+                            <div class="tv-app-thumb" style="background:linear-gradient(135deg,#c4b5fd,#8b5cf6)"></div>
+                            <div class="tv-app-meta"><b>Desk Mat</b><span class="tv-app-price">$29</span></div>
+                          </button>
+                          <button class="tv-app-card" type="button" data-name="Field Cap">
+                            <div class="tv-app-thumb" style="background:linear-gradient(135deg,#7dd3fc,#0ea5e9)"></div>
+                            <div class="tv-app-meta"><b>Field Cap</b><span class="tv-app-price">$22</span></div>
+                          </button>
+                          <button class="tv-app-card" type="button" data-name="Wool Throw">
+                            <div class="tv-app-thumb" style="background:linear-gradient(135deg,#fda4af,#e11d48)"></div>
+                            <div class="tv-app-meta"><b>Wool Throw</b><span class="tv-app-price">$54</span></div>
+                          </button>
+                          <button class="tv-app-card" type="button" data-name="Clay Mug">
+                            <div class="tv-app-thumb" style="background:linear-gradient(135deg,#fcd34d,#d97706)"></div>
+                            <div class="tv-app-meta"><b>Clay Mug</b><span class="tv-app-price">$14</span></div>
+                          </button>
+                          <button class="tv-app-card" type="button" data-name="Canvas Tote">
+                            <div class="tv-app-thumb" style="background:linear-gradient(135deg,#86efac,#16a34a)"></div>
+                            <div class="tv-app-meta"><b>Canvas Tote</b><span class="tv-app-price">$32</span></div>
+                          </button>
+                        </div>
+                        <div class="tv-app-noresults" id="tv-app-noresults" hidden>No products found</div>
+                      </div>
+                    </div>
+
+                    <!-- Placeholder screens -->
+                    <div class="tv-app-screen" data-screen="search">
+                      <div class="tv-app-empty">
+                        <svg class="tv-app-emico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+                        <b>Search</b><span>Find products, brands and more</span>
+                      </div>
+                    </div>
+                    <div class="tv-app-screen" data-screen="cart">
+                      <div class="tv-app-empty">
+                        <svg class="tv-app-emico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M6 6L5 3H3"/></svg>
+                        <b>Your cart is empty</b><span>Add items to get started</span>
+                      </div>
+                    </div>
+                    <div class="tv-app-screen" data-screen="profile">
+                      <div class="tv-app-empty">
+                        <svg class="tv-app-emico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+                        <b>Guest</b><span>Sign in to view your profile</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tv-app-tabs">
+                    <button class="tv-app-tab is-active" type="button" data-screen="home">
+                      <svg class="tv-app-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+                      <span>Home</span>
+                    </button>
+                    <button class="tv-app-tab" type="button" data-screen="search">
+                      <svg class="tv-app-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+                      <span>Search</span>
+                    </button>
+                    <button class="tv-app-tab" type="button" data-screen="cart">
+                      <svg class="tv-app-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M6 6L5 3H3"/></svg>
+                      <span>Cart</span>
+                    </button>
+                    <button class="tv-app-tab" type="button" data-screen="profile">
+                      <svg class="tv-app-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+                      <span>Profile</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tv-terminal">
+            <div class="tv-term-head">
+              <div class="tv-term-tabs">
+                <button class="tv-term-tab is-active" type="button">
+                  <img class="tv-logo-white" src="assets/emobiq-logomark.svg" alt="" />
+                  eMOBIQ Terminal
+                </button>
+                <button class="tv-term-tab" type="button">
+                  <img src="assets/terminal-icon.svg" alt="" />
+                  Terminal
+                </button>
+                <button class="tv-term-add" type="button" aria-label="New terminal">
+                  <img src="assets/plus-lg-icon.svg" alt="" />
+                </button>
+              </div>
+              <button class="tv-term-collapse" type="button" aria-label="Collapse terminal">
+                <img src="assets/chevron-bottom-icon.svg" alt="" />
+              </button>
+            </div>
+            <div class="tv-term-body">
+<pre><span class="tv-c-path">~/project</span>
+<span class="tv-c-prompt">❯</span> npm install
+
+added 278 packages in 5s
+
+65 packages are looking for funding
+  run `npm fund` for details
+
+~/project 5s
+<span class="tv-c-prompt">❯</span> npm run dev
+
+&gt; vite-react-typescript-starter@0.0.0 dev
+&gt; vite
+
+
+  <span class="tv-c-ok">VITE v5.4.8</span>  ready in 2529 ms
+
+  ➜  Local:   <span class="tv-c-path">http://localhost:5173/</span>
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+</pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- Right: AI Revision chat -->
+        <aside class="tv-chat">
+          <div class="tv-chat-head">
+            <img src="assets/ai-revision-icon.svg" alt="" />
+            <span>AI Revision</span>
+            <button class="tv-iconbtn tip-below tip-end tv-chat-menu" type="button" data-tip="Menu" aria-label="Menu">
+              <img src="assets/vert-dots-menu-icon.svg" alt="" />
+            </button>
+          </div>
+          <div class="tv-chat-content">
+            <div class="tv-chat-list">
+              <div class="tv-msg tv-msg-plain">I'll add a search functionality with a dropdown search bar. Let me implement that for you.</div>
+
+              <div class="tv-task">
+                <button class="tv-task-head" type="button" aria-expanded="true">
+                  Add search functionality to navbar
+                  <img src="assets/chevron-bottom-icon.svg" alt="" />
+                </button>
+                <div class="tv-task-divider"></div>
+                <div class="tv-task-body">
+                  <div class="tv-task-item">
+                    <img src="assets/check-icon.svg" alt="" />
+                    <span>Create src/components/SearchBar.tsx</span>
+                  </div>
+                  <div class="tv-task-item">
+                    <img src="assets/check-icon.svg" alt="" />
+                    <span>Create src/components/NavBar.tsx</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tv-msg tv-msg-list">
+                <div>
+                  <p>I've added a search functionality with the following features:</p>
+                  <ol>
+                    <li>Clicking the search icon opens a search dropdown</li>
+                    <li>The search bar automatically focuses when opened</li>
+                    <li>Users can search by product name, description, or category</li>
+                    <li>Search results show product images, names, and prices</li>
+                    <li>The search bar closes when clicking the X button or selecting a product</li>
+                    <li>Shows a "No products found" message when there are no results</li>
+                    <li>The search and cart dropdowns are mutually exclusive (opening one closes the other)</li>
+                  </ol>
+                  <p>The search is currently performing a client-side search of the products. In a production environment, you'd want to connect this to a backend API for searching products in your database.</p>
+                </div>
+                <div class="tv-msg-actions">
+                  <button class="tv-msg-action has-divider" type="button">
+                    <img src="assets/arrow-counterclockwise-icon.svg" alt="" />
+                    Revert
+                  </button>
+                  <button class="tv-msg-action" type="button">
+                    <img src="assets/bug-icon.svg" alt="" />
+                    Report issue
+                  </button>
+                </div>
+              </div>
+
+              <div class="tv-msg tv-msg-plain">
+                <p>I've added a search functionality with the following features:</p>
+                <ol>
+                  <li>Clicking the search icon opens a search dropdown</li>
+                  <li>The search bar automatically focuses when opened</li>
+                  <li>Users can search by product name, description, or category</li>
+                  <li>Search results show product images, names, and prices</li>
+                  <li>The search bar closes when clicking the X button or selecting a product</li>
+                  <li>Shows a "No products found" message when there are no results</li>
+                  <li>The search and cart dropdowns are mutually exclusive (opening one closes the other)</li>
+                </ol>
+                <p>The search is currently performing a client-side search of the products. In a production environment, you'd want to connect this to a backend API for searching products in your database.</p>
+              </div>
+
+              <div class="tv-msg tv-msg-plain">
+                <p>I've added a search functionality with the following features:</p>
+                <ol>
+                  <li>Clicking the search icon opens a search dropdown</li>
+                  <li>The search bar automatically focuses when opened</li>
+                  <li>Users can search by product name, description, or category</li>
+                  <li>Search results show product images, names, and prices</li>
+                  <li>The search bar closes when clicking the X button or selecting a product</li>
+                  <li>Shows a "No products found" message when there are no results</li>
+                  <li>The search and cart dropdowns are mutually exclusive (opening one closes the other)</li>
+                </ol>
+                <p>The search is currently performing a client-side search of the products. In a production environment, you'd want to connect this to a backend API for searching products in your database.</p>
+              </div>
+            </div>
+
+            <div class="tv-prompt">
+              <div class="tv-prompt-text">How can I help you today?</div>
+              <div class="tv-prompt-icons">
+                <button class="tv-iconbtn tip-start" type="button" data-tip="AI-enhanced prompt" aria-label="AI-enhanced prompt">
+                  <img src="assets/adv-prompt-icon.svg" alt="" />
+                </button>
+                <button class="tv-iconbtn tip-start" type="button" data-tip="Record voice" aria-label="Record voice">
+                  <img src="assets/mic-icon.svg" alt="" />
+                </button>
+                <button class="tv-iconbtn tip-start" type="button" data-tip="Attach files" aria-label="Attach files">
+                  <img src="assets/paperclip-icon.svg" alt="" />
+                </button>
+                <button class="tv-iconbtn tip-start" type="button" data-tip="Reference" aria-label="Reference">
+                  <img src="assets/at-handler-icon.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

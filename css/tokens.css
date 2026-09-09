@@ -1,0 +1,110 @@
+/* =========================================================
+     ETD·ERM tokens, dark theme, desktop breakpoint.
+     Aliases resolved from Primitive + Semantic + Size + Components.
+     Every line-height is divisible by 4.
+     ========================================================= */
+  :root {
+    --brand-500:      #FF5F24;
+    --brand-600:      #D95726;
+
+    --figma-bg-main:      #141414;
+    --figma-bg-rail-top:  #262626;
+    --figma-bg-rail-btm:  #733b26;
+    --figma-bg-plate-dk:  #1f1f1f;
+    --slate-50:       #F8FAFC;
+    --slate-100:      #F1F5F9;
+    --slate-200:      #E2E8F0;
+    --slate-500:      #64748B;
+    --slate-700:      #334155;
+    --slate-800:      #1E293B;
+    --slate-900:      #0F172A;
+    --slate-950:      #020617;
+    --ink-50:         #F1F5FC;
+    --ink-300:        #BCC3CD;
+    --ink-400:        #99A1AB;
+    --ink-500:        #6E757F;
+    --ink-600:        #515760;
+    --teal-500:       #4DD4AC;
+    --red-500:        #DC3545;
+    --blue-400:       #3D8BFD;
+
+    --surface-canvas:      var(--slate-900);
+    --surface-base:        var(--slate-800);
+    --surface-subtle:      var(--slate-700);
+    --surface-raised:      var(--slate-500);
+    --surface-floating:    var(--slate-700);
+    --surface-brand:       var(--brand-500);
+    --surface-brand-emph:  var(--brand-600);
+    --surface-inverse:     var(--slate-50);
+
+    --text-primary:        var(--ink-50);
+    --text-secondary:      var(--ink-300);
+    --text-tertiary:       var(--ink-400);
+    --text-placeholder:    var(--ink-500);
+    --text-quaternary:     var(--ink-600);
+    --text-disabled:       var(--ink-600);
+    --text-on-emphasis:    #FFFFFF;
+    --text-inverse:        var(--slate-900);
+    --text-brand:          var(--brand-500);
+
+    --border-subtle:       rgba(255,255,255,0.10);
+    --border-normal:       rgba(255,255,255,0.20);
+    --border-strong:       rgba(255,255,255,0.30);
+    --border-brand:        var(--brand-500);
+    --border-focus:        var(--blue-400);
+
+    --status-success:      var(--teal-500);
+    --status-error:        var(--red-500);
+    --figma-border-lv1: #474747;  /* color/line/lv1 */
+    --figma-border-lv2: #575659;  /* color/line/lv2 */
+    --figma-border-hover: #666666; /* card hover border */
+    --figma-toggle-off:   #454547; /* toggle switch OFF state bg */
+    --figma-toggle-thumb: #ffffff; /* toggle switch thumb */
+    --figma-icon-bg:    #333333;  /* icon circle bg */
+    --surface-card:     rgba(255,255,255,0.05); /* card/tile bg */
+
+    --action-secondary-hover:  rgba(255,255,255,0.08);
+    --action-secondary-active: rgba(255,255,255,0.20);
+
+    --space-4:  4px;
+    --space-8:  8px;
+    --space-12: 12px;
+    --space-16: 16px;
+    --space-20: 20px;
+    --space-24: 24px;
+    --space-28: 28px;
+    --space-32: 32px;
+    --space-36: 36px;
+    --space-40: 40px;
+
+    --radius-xs:   2px;
+    --radius-sm:   4px;
+    --radius-md:   6px;
+    --radius-lg:   8px;
+    --radius-xl:   12px;
+    --radius-2xl:  20px;
+    --radius-full: 9999px;
+
+    --border-hairline: 1px;
+    --border-thin:     2px;
+
+    --control-h-xs: 24px;
+    --control-h-sm: 32px;
+    --control-h-md: 40px;
+    --control-h-lg: 48px;
+    --control-h-xl: 56px;
+
+    --type-display-fs: 28px;   --type-display-lh: 36px;   --type-display-fw: 600;
+    --type-h1-fs:      24px;   --type-h1-lh:      32px;   --type-h1-fw:      600;
+    --type-h2-fs:      20px;   --type-h2-lh:      28px;   --type-h2-fw:      600;
+    --type-h3-fs:      16px;   --type-h3-lh:      24px;   --type-h3-fw:      600;
+    --type-body-fs:    14px;   --type-body-lh:    20px;   --type-body-fw:    400;
+    --type-body-md-fs: 14px;   --type-body-md-lh: 20px;   --type-body-md-fw: 500;
+    --type-body-sb-fs: 14px;   --type-body-sb-lh: 20px;   --type-body-sb-fw: 600;
+    --type-caption-fs: 12px;   --type-caption-lh: 16px;   --type-caption-fw: 400;
+    --type-caption-sb-fs: 12px; --type-caption-sb-lh: 16px; --type-caption-sb-fw: 600;
+    --type-footnote-fs: 11px;  --type-footnote-lh: 16px;  --type-footnote-fw: 400;
+    --budget-input-py: 13px;
+    --budget-input-px: 17px;
+    --budget-gap:      14px;
+  }
